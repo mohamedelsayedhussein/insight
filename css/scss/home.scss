@@ -1,0 +1,85 @@
+
+/* ========= Home Style ========= */
+
+
+    /*  =========== Start showcase Style =============== */
+
+    .showcase {  
+        margin-top: 6rem;
+
+
+
+        .owl-carousel:hover .item:not(:hover) {
+            opacity: .8;
+        }
+
+        .item {
+            margin: .7rem;
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(1.07);
+            }
+        }
+
+    }
+
+
+
+    .title {
+        font: normal 600 2.5rem/2 $mainFont;
+        text-transform: uppercase;
+        text-align: center;
+        background: linear-gradient(to right, #f16e03, #e4730a, #f0a432, #faae35, #ffb932, #fbc55e, #fbc55e);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        margin-bottom: 1rem;
+    }
+
+    .caption {
+        font: normal 600 2rem $mainFont !important;
+        text-align: left !important;
+        color: $fontColor;
+        padding-left: 1rem;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        font: 300 1.2rem $primaryFont !important;
+        padding-left: 1rem;
+        color: #c7c7c7;
+
+        i {
+            color: #c2c2c2;
+            font-size: 2rem !important;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem !important;
+        padding: 0 2.5rem 0 1rem;
+
+        .stars-rate,
+        .bell {
+            color: $mainColor;
+            cursor: pointer;
+        }
+        
+        .outline,
+        .share {
+            color: $fontColor ;
+            cursor: pointer;
+        }
+
+        .bell {
+            padding-right: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+
+    /*  ============= End showcase Style =============== */

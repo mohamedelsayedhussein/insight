@@ -1,0 +1,61 @@
+    /* ============== Start Preloader Style =============== */
+    #overlay {
+        width: 100%;
+        height: 100%;
+        background: $mainColor;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+
+        .preload {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            border: 4px solid $blackColor;
+            animation: animate 2s linear infinite;
+
+            @keyframes animate {
+                0%{
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+                25%{
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+                50%{
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+                75%{
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+                100%{
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $whiteColor;
+                animation: Liquid 2s linear infinite;
+
+                @keyframes Liquid {
+                    0%{ height:0; }
+                    25%{ height:0; }              
+                    50%{ height:100%; }
+                    75%{ height:100%; }
+                    100%{ height:0; }
+                }
+            }
+        }
+
+    }
+
+    /* ============== End Preloader Style =============== */
