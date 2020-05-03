@@ -8,7 +8,7 @@ window.onload = function(){
     overlay.style.display = 'none';
 }
 
-// creat button to go up 
+// creat button to go up the
 
 let myButton = document.getElementById('up');
 
@@ -32,7 +32,7 @@ myButton.onclick = function(){
 
 new WOW().init();
 
-// Toggle Menu Button 
+// Toggle Menu Button Using Jquery
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -345,7 +345,7 @@ var chart = AmCharts.makeChart("chartdiv", {
             52,
             51,
             50,
-        
+         
 ],
         allowPointSelect: true,
         color: {
